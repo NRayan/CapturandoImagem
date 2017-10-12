@@ -4,8 +4,13 @@
              xmlns:local="clr-namespace:CapturandoImagem"
              x:Class="CapturandoImagem.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout VerticalOptions="Fill" BackgroundColor="#1976D2">
+        <Image x:Name="imgfoto" VerticalOptions="Center"/>
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Margin="0,0,0,15">
+            <Button Text="Capturar" x:Name="btnCapturar" Clicked="btnCapturar_Clicked"/>
+            <Button Text="Limpar" x:Name="btnLimpar" Clicked="btnLimpar_Clicked"/>
+            <Button Text="Galeria" x:Name="btnGaleria" Clicked="btnGaleria_Clicked"/>
+        </StackLayout>
+    </StackLayout>
 
 </ContentPage>
